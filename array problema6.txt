@@ -1,0 +1,29 @@
+// 6. Se citeste un numar natural cu 8 cifre. Sa se afiseze de cate ori apare fiecare cifra.
+// ex: n = 22478837
+
+$n = 22478837;
+ $cifra=0;
+ 
+$cifra0=0;
+$cifra1=0;
+$cifra2=0;
+$cifra3=0;
+$cifra4=0;
+$cifra5=0;
+$cifra6=0;
+$cifra7=0;
+$cifra8=0;
+$cifra9=0;
+
+while( $n!=0){
+      $n % 10 ==$cifra;{
+          if($cifra == 2)$cifra2++;
+           else {
+               if($cifra == 7)$cifra7++;
+           }
+           
+      }
+      $n=$n / 10;
+}
+
+echo "Cifra 2 apare de $cifra2 ori";
