@@ -1,0 +1,14 @@
+// 7. Se dau 2 numere naturale n si m. Sa se determine cel mai mare divizor
+// comun(CMMDC).
+
+ 
+ $n=15;
+ $m=50;
+ 
+ while( $n!= $m)
+     if( $n>$m)
+        $n-= $m;
+    else
+        $m-=$n;
+ echo $n;
+
