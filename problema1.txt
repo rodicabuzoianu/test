@@ -1,0 +1,12 @@
+/*1. Se dau doua numere naturale n si m. Sa se afiseze patratul primului numar, si cubul
+celui de-al treilea numar.*/
+
+$n = 6;
+$m = 4;
+
+$x = $n * $n;
+$y = $m * $m * $m;
+
+echo $x ;
+echo " ";
+echo $y ;
