@@ -1,0 +1,17 @@
+// // Se da un array. Sa se afiseze elementul din mijloc. Daca array-ul are un numar
+// impar de elemente, sa se afiseze un singur element, daca are un numar par, sa se
+// afiseze cele 2 elemente din mijloc.
+
+$array = [1 , 7, 4, 5, 2, 9, 10];
+
+$lungime= count($array);
+
+if ($lungime % 2 !=0){
+    $i= (count($array)-1)/2;
+    echo " $array[$i]";
+}
+  else{
+      $i= count($array) / 2;
+      echo "$array[$i]  si $array[$i+1]";
+      
+ }
