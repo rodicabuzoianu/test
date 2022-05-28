@@ -1,0 +1,22 @@
+/*6. Se da un numar natural n. Sa se determine daca suma cifrelor sale este un numar*/
+prim.
+$n=24;
+$sum=0;
+$numar_divizori = 0;
+ 
+ while ($n!= 0){
+     $sum= $sum + $n% 10;
+     $n=$n/10;
+ }
+ 
+for($i=1; $i<$sum+1; $i++)
+{
+    if ( $sum % $i == 0 ) $numar_divizori++;
+}
+ 
+if( $numar_divizori > 2) {
+    echo "suma nr nu e nr prim";
+}
+else {
+    echo "suma nr e nr prim";
+}

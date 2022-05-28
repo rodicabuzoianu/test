@@ -1,0 +1,41 @@
+/*3. In aplicatia Google Maps introducem o destinatie, cu scopul de a afla cel mai scurt
+drum. Aplicatia ne ofera 3 variante, cu distante si timpi diferiti. Sa se scrie un
+program PHP care sa determine cea mai scurta distanta dintre cele 3 variante.
+Daca doua distante sunt egale, sa se afiseze ambele.*/
+
+$d1 = 243;
+$d2 = 200;
+$d3 = 313;
+
+
+if ($d1 > $d2 ){
+    if ($d1 > $d3){
+        echo $d1;
+    }
+    elseif($d1<$d3){
+        echo "$d3";
+    }
+     else {
+        echo "$d1  $d3";
+    }
+}
+
+elseif($d1<$d2) {
+    if($d1<$d3){
+        if($d2<$d3) {
+            echo "$d3";
+        }
+        elseif($d2>$d3){
+            echo "$d2";
+        }
+        else {
+            echo "$d2 $d3";
+        }
+     }
+    elseif($d1>$d3) {
+        echo "$d2";
+    }
+    else {
+        echo "$d2";
+    }
+}
