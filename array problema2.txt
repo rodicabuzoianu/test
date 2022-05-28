@@ -1,0 +1,10 @@
+// Se da un array. Sa se afiseze elementele de pe pozitii divizibile cu 3.
+
+$array= [3, 20, 75, 101, 38,77 , 8];
+
+
+for ($i =0 ; $i<= count($array) - 1 ; $i++)
+{
+    if ( $i % 3 == 0  )
+   echo "$array[$i] ";
+}

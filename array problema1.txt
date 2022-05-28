@@ -1,0 +1,14 @@
+1. Se da un array. Sa se afiseze elementele pare ale array-ului.
+
+
+
+
+$array =[3, 20, 75, 101, 38];
+
+
+for ($i=0; $i<count($array); $i++){
+
+    if($array[$i] % 2 == 0 && $i != 0){
+        echo $array[$i] . "\n";
+    }
+}

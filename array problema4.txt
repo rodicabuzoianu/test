@@ -1,0 +1,11 @@
+// 4. Se da un array cu 10 elemente. Sa se calculeze cele mai mari 3 numere din array.
+
+$array= [3, 20, 75, 101, 38, 77, 25, 8, 90, 123];
+
+asort($array);
+
+$descrescator = array_reverse($array);
+$result = array_splice($descrescator, 0, 3);
+
+print_r($result);
+

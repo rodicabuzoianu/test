@@ -1,0 +1,10 @@
+// // 5. Se da un array. Sa se elimine elementul de pe pozitia 3. In final, array-ul trebuie sa
+// aiba lungimea mai mica cu 1.
+
+
+$array= [3, 20, 75, 101, 38];
+
+
+unset($array[3]);
+
+print_r($array);

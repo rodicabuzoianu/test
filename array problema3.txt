@@ -1,0 +1,11 @@
+// Se da un array. Sa se calculeze suma numerelor, exceptand capetele array-ului.
+
+$array =[3, 20, 75, 101, 38];
+$sum= 0;
+
+for ($i =1 ; $i<= count($array) - 2 ; $i++)
+{
+   $sum= $sum + $array[$i];
+   
+}
+echo "$sum ";
