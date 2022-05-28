@@ -1,0 +1,118 @@
+/*1. Se dau doua numere naturale n si m. Sa se afiseze patratul primului numar, si cubul
+celui de-al treilea numar.*/
+
+$n = 6;
+$m = 4;
+
+$x = $n * $n;
+$y = $m * $m * $m;
+
+echo $x ;
+echo " ";
+echo $y ;
+
+/*2. Se da un numar natural n. Sa se determine daca numarul este prim.*/
+
+$n = 7;
+$numar_divizori = 0;
+ 
+for($i=1; $i<$n+1; $i++)
+{
+    if ( $n % $i == 0 ) $numar_divizori++;
+}
+ 
+if( $numar_divizori > 2) {
+    echo "numarul nu e prim";
+}
+else {
+    echo "nr e prim";
+}
+
+/*3. In aplicatia Google Maps introducem o destinatie, cu scopul de a afla cel mai scurt
+drum. Aplicatia ne ofera 3 variante, cu distante si timpi diferiti. Sa se scrie un
+program PHP care sa determine cea mai scurta distanta dintre cele 3 variante.
+Daca doua distante sunt egale, sa se afiseze ambele.*/
+
+$d1 = 243;
+$d2 = 200;
+$d3 = 313;
+
+
+if ($d1 > $d2 ){
+    if ($d1 > $d3){
+        echo $d1;
+    }
+    elseif($d1<$d3){
+        echo "$d3";
+    }
+     else {
+        echo "$d1  $d3";
+    }
+}
+
+elseif($d1<$d2) {
+    if($d1<$d3){
+        if($d2<$d3) {
+            echo "$d3";
+        }
+        elseif($d2>$d3){
+            echo "$d2";
+        }
+        else {
+            echo "$d2 $d3";
+        }
+     }
+    elseif($d1>$d3) {
+        echo "$d2";
+    }
+    else {
+        echo "$d2";
+    }
+}
+
+/*4. Se da un numarul natural n. Sa se afiseze toti divizorii acestuia.*/
+
+$n = 10;
+
+ 
+for($i=1; $i<$n+1; $i++)
+{
+    if ( $n % $i == 0 ) {
+        echo "$i";
+        echo " ";
+    }
+}
+
+
+
+/*6. Se da un numar natural n. Sa se determine daca suma cifrelor sale este un numar*/
+prim.
+$n=24;
+$sum=0;
+$numar_divizori = 0;
+ 
+ while ($n!= 0){
+     $sum= $sum + $n% 10;
+     $n=$n/10;
+ }
+ 
+for($i=1; $i<$sum+1; $i++)
+{
+    if ( $sum % $i == 0 ) $numar_divizori++;
+}
+ 
+if( $numar_divizori > 2) {
+    echo "suma nr nu e nr prim";
+}
+else {
+    echo "suma nr e nr prim";
+}
+
+
+
+
+
+
+
+
+
